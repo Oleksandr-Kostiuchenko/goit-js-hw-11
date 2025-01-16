@@ -1,4 +1,6 @@
 import { renderGallery } from "./render-functions";
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
 
 export const fetchImg = (userQuery, gallery, queryInput) => {
     fetch(`https://pixabay.com/api/?q=${userQuery}&key=39635982-91d856b8fc78635a8aaf79b21&image_type=photo&orientation=horizontal&safesearch=true`)
@@ -29,7 +31,6 @@ export const fetchImg = (userQuery, gallery, queryInput) => {
                 galleryHTML.push(renderGallery(imageEl));
             })
 
-            galleryHTML.join('');
-            gallery.insertAdjacentHTML('beforeend', galleryHTML);
+            gallery.insertAdjacentHTML('beforeend', galleryHTML.join(' '));
         })
 }
