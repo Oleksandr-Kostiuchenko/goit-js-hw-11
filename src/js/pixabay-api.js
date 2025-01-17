@@ -32,7 +32,7 @@ export const fetchImg = (userQuery, gallery, queryInput) => {
                     titleSize: '25',
                     message: 'Sorry, there are no images matching your search query. Please try again!',
                     messageSize: '15',
-                    position: 'topRight'
+                    position: 'bottomRight'
                 });
             }
 
