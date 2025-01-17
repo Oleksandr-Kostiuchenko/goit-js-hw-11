@@ -27,7 +27,7 @@ const onFormSubmit = event => {
             titleSize: '25',
             message: 'Please fill the gap!',
             messageSize: '20',
-            position: 'bottomRight'
+            position: 'topRight'
         });
 
         return;
