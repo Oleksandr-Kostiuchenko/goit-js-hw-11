@@ -1,10 +1,10 @@
-import iziToast from "izitoast";
-import "izitoast/dist/css/iziToast.min.css";
-
+//* Export render function 
 export const renderGallery = imageEl => {
     return `
     <li class="gallery-item">
-        <img class="gallery-image" src="${imageEl.webformatURL}" alt="${imageEl.tags}">
+        <a class="gallery-link" href="${imageEl.largeImageURL}">
+            <img class="gallery-image" src="${imageEl.webformatURL}" alt="${imageEl.tags}">
+        </a>
         
         <div class='description-image'>
         <p>
